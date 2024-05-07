@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+}
+.cabecalho{
+    background-color: black;
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho ul, .sub-cabecalho, .anuncio{
+    display: flex;
+    align-items: center;
+    color: rgb(201, 201, 201);
+    justify-content: space-between;
+    text-decoration: none;
+}
+.anuncio img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sub-cabecalho{
+    height: 80px;
+    width: 70%;
+}
+.lista-sessoes-link{
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    margin: 0 15px 0 15px;
+    transition: all 0.5s ease;
+}
+.lista-sessoes-link:hover{
+    background: linear-gradient(90deg, rgba(237,24,24,1) 0%, rgba(247,31,122,1) 55%, rgba(28,154,254,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+.lista-redes-link{
+    height: 40px;
+    border-radius: 12px;
+    margin: 0 15px 0 15px;
+    transition: all 0.5s ease;
+}
+.lista-redes-link:hover{
+    height: 60px;
+}
+.apresentacao-imagem{
+    width: 100%;
+    overflow: hidden;
+}
+.imagem{
+    display: none;
+}
+.imagem img{
+    width: 100%;
+    height: 550px;
+}
+.apresentacao-botoes{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.active {
+    display: block;
+}
+.apresentacao-botoes input{
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    border: orangered 1px solid;
+}
+.apresentacao-botoes input:checked + h1{
+    position: absolute;
+    bottom: 300px;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}

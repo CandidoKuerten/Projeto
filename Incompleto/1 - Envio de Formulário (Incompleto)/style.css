@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}    
+body{
+    background-image: url(Assets/imagem-de-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    width: 40%;
+    margin-top: 6%;
+    padding: 10px 40px 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+h1{
+    color: rgb(17, 134, 128);
+    margin: 20px;
+}
+.entrada{
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+}
+.input{
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: rgb(241, 241, 241);
+    outline: none;
+    font-size: 16px;
+    width: 32vw;
+}
+label{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-weight: 500;
+    right: 150px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+form .entrada .input:focus ~ label,
+form .entrada .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #2D5966;
+}

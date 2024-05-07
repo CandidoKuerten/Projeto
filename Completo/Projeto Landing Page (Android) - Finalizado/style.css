@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Android";
+    src: url("/fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+ }
+ body{
+    font-family:sans-serif
+}
+header{
+    background-image: linear-gradient(to bottom, rgb(64, 155, 94) 0%, rgb(53, 168, 76) 34%, rgb(38, 112, 36) 73%, rgba(10,87,38,1) 100%);
+    height: 200px;
+    color: rgb(227, 214, 214);
+    text-shadow: 1px 2px black;
+}
+header div{
+    text-align: center;
+}
+header h1{
+    padding-top: 15px
+}
+header p{
+    font-weight: bold;
+    color: rgb(192, 204, 184);
+}
+header a{
+    text-decoration: none;
+    color: rgb(66, 162, 69);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    transition: all 0.5s ease;
+}
+header a:hover{
+    background-color: rgb(88, 133, 104);
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px
+}
+header nav{
+    padding-top: 40px;
+}
+main{
+    background-color: rgb(122, 208, 122);
+    padding-bottom: 25px;
+}
+section{
+    width: 80%;
+    min-width: 20%;
+    max-width: 80%;
+    background-color: rgb(238, 231, 231);
+    margin-left: 10%;
+}
+article{
+    width: 92%;
+    margin-left: 25px;
+}
+article p{
+    text-indent: 20px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+span, span a{
+    color: rgb(25, 188, 25);
+    text-decoration: none;
+    background-color: rgb(19, 94, 19);
+    padding: 1px;
+}
+iframe{
+    position: absolute;
+    left: 2px;
+    bottom: 0px;
+    border: 1rem solid darkgreen;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+footer{
+    background-color: rgb(12, 114, 12);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer span{
+    color: white;
+    font-weight: bold;
+}
+.titulo{
+    font-family: "Android";
+    color: rgb(15, 107, 15);
+    font-size: 26px;
+    padding-top: 15px;
+}
+.gradiente{
+    background: linear-gradient(90deg, rgb(155, 211, 160) 0%, rgb(149, 222, 174) 31%, rgb(200, 234, 212) 53%,  rgb(238, 231, 231) 85%);
+    font-size: 18px;
+    padding: 0 0 3px 7px;
+}
+.video1{
+    position: relative;
+    padding: 29%;
+}
+.tabela{
+    background-color: rgb(122, 208, 122);
+    border-radius: 20px;
+}
+.tabela h1{
+    background-color: darkgreen;
+    color: rgb(255, 246, 246);
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+.tabela div{
+    padding: 0 10px;
+}
+.final{
+    border-radius: 0 0 25px 25px;
+}
