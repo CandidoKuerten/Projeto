@@ -43,7 +43,21 @@ footer{
     font-family: var(--fonte1);
 }
 .fundo-flor{
+    background-image: url('background001.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2%;
+}
+.fundo-fosco{
+    background: rgba(12, 7, 7, 0.3);
+    width: 50%;
+    color: white;
 }
 .fundo-livro{
-
+    background-image: url('background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2%;
 }
