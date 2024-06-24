@@ -10,31 +10,31 @@
 </head>
 <body>
     <div>
-        <div class="operacao"><p></p></div>
-        <div class="numero"><p></p></div>
+        <div class="operacao"><p id="operacao"></p></div>
+        <div class="numero" id="numero"><p></p></div>
         <table>
             <tr>
-                <td colspan="2" class="vermelho"><button>AC</button></td>
-                <td class="cinza-claro"><button>/</button></td>
-                <td class="cinza-claro"><button>X</button></td>
+                <td colspan="2" class="vermelho"><button onclick="limpar()">AC</button></td>
+                <td class="cinza-claro"><button value="/" id="entrada" onclick="salvar()">/</button></td>
+                <td class="cinza-claro"><button value="*" id="entrada" onclick="salvar()">X</button></td>
             </tr>
             <tr>
-                <td class="cinza"><button>7</button></td>
-                <td class="cinza"><button>8</button></td>
-                <td class="cinza"><button>9</button></td>
-                <td class="cinza-claro"><button>-</button></td>
+                <td class="cinza"><button value="7" id="entrada" onclick="salvar()">7</button></td>
+                <td class="cinza"><button value="8" id="entrada" onclick="salvar()">8</button></td>
+                <td class="cinza"><button value="9" id="entrada" onclick="salvar()">9</button></td>
+                <td class="cinza-claro"><button value="-" id="entrada" onclick="salvar()">-</button></td>
             </tr>
             <tr>
-                <td class="cinza"><button>4</button></td>
-                <td class="cinza"><button>5</button></td>
-                <td class="cinza"><button>6</button></td>
-                <td class="cinza-claro"><button>+</button></td>
+                <td class="cinza"><button value="4" id="entrada" onclick="salvar()">4</button></td>
+                <td class="cinza"><button value="5" id="entrada" onclick="salvar()">5</button></td>
+                <td class="cinza"><button value="6" id="entrada" onclick="salvar()">6</button></td>
+                <td class="cinza-claro"><button value="+" id="entrada" onclick="salvar()">+</button></td>
             </tr>
             <tr>
-                <td class="cinza"><button>1</button></td>
-                <td class="cinza"><button>2</button></td>
-                <td class="cinza"><button>3</button></td>
-                <td rowspan="2" class="azul"><button>=</button></td>
+                <td class="cinza"><button value="1" id="entrada" onclick="salvar()">1</button></td>
+                <td class="cinza"><button value="2" id="entrada" onclick="salvar()">2</button></td>
+                <td class="cinza"><button value="3" id="entrada" onclick="salvar()">3</button></td>
+                <td rowspan="2" class="azul"><button onclick="calcular()">=</button></td>
             </tr>
             <tr>
                 <td colspan="2" class="cinza"><button>0</button></td>

@@ -37,9 +37,14 @@ div p{
     bottom: 0;
 }
 td{
-    padding: 30px;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
 }
 button{
+    width: 100%;
+    height: 100%;
     font-size: 25px;
     background: none;
     border: none;
@@ -52,8 +57,13 @@ td:hover{
 button:hover{
     color: var(--cor7);
 }
+#numero{
+    font-size: 28px;
+}
 .operacao{
     color: var(--cor6);
+    margin-bottom: 10px;
+    font-size: 23px;
 }
 .vermelho{
     background-color: var(--cor1);
