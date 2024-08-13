@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function validateForm(event) {
-        event.preventDefault();
         if (!validateNumber()) {
             event.preventDefault()
+            document.querySelector("#mensagem").innerHTML = mensagem;
+        }else{
+            openModal()
         }
-        document.querySelector("#mensagem").innerHTML = mensagem;
-        openModal()
         setTimeout(() =>{
             location.reload()
         }, 5000)

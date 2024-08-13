@@ -157,6 +157,9 @@ p{
 .portfolio:hover{
     background-position: 100% 100%;
 }
+.portfolio .projeto1{
+    background-image: url(assets/Captacao_Lead.png);
+}
 .portfolio div{
     justify-content: center;
     align-items: center;
