@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Quiz da Kuerten Soluções Tecnológicas para identificarmos qual seu problema referente ao mundo tecnológico e a qual profissional podemos designar para ajudar você da melhor forma!">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador KST</title>
+    <script src="modal.js" defer></script>
+    <script src="validate.js" defer></script>
+</head>
+
+<body>
+    <div class="modal">
+        <h3>Agradecemos por usar nossos sistemas!</h3>
+        <br>
+        <p>
+            Muito obrigado por usar o nosso sistema! Gostaríamos de lembrar que todos os dados e resultados apresentados são meramente ilustrativos e destinados a demonstrar as funcionalidades do sistema.
+        </p>
+        <br>
+        <button onclick="closeModal()"><h5>Fechar</h5></button>
+    </div>
+    <div class="conteudo">
+        <header class="cabecalho">
+            <div class="fundo">
+                <div class="centro">
+                    <img src="assets/logoKST.png" alt="Logo da Empresa" width="350px">
+                    <h1>Simulador KST</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="centro">
+                <section>
+                    <article>
+                        <h2>Você sabe distinguir se possui problema com tecnologia?</h2>
+                        <span>
+                            <h2 style="font-weight: normal;">Faça agora mesmo o teste e descubra!</h2>
+                        </span>
+                        <br>
+                        <p>Você quer descobrir o quanto sabe sobre tecnologia de uma maneira divertida e fácil? Participe do
+                            nosso Quiz de Tecnologia! Este quiz é perfeito para todos, mesmo que você não seja um expert.
+                            Responda perguntas sobre gadgets, inovações e curiosidades do mundo digital, e veja como você se
+                            sai. É uma ótima maneira de aprender algo novo e desafiar seus amigos. Venha conferir e descubra
+                            se você entende mais de tecnologia do que imagina!</p>
+                        <br>
+                    </article>
+                    <br>
+                    <article>
+                        <h3>Hardware ou Software, descubra a qual setor do T.I. o seu problema corresponde?</h3>
+                        <p>
+                            Descubra fazendo agora mesmo o seu teste. Bom quiz!
+                            <br>
+                            <br>
+                            A tecnologia é uma ferramenta poderosa que pode transformar nossas vidas para melhor, mas seu
+                            uso excessivo pode nos afastar do mundo real e das pessoas ao nosso redor. A verdadeira inovação
+                            está em como usamos a tecnologia para enriquecer nossas experiências e fortalecer nossas
+                            conexões. Faça da tecnologia sua aliada, não sua dona.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <aside>
+            <div>
+                <h1 style="font-size: 35px;">Sim! Quero fazer o teste!</h1>
+                <br>
+                <h4 style="font-weight: normal; padding-bottom: 5px;">Preencha o formulário abaixo, desejamos a você um bom quiz!</h4>
+            </div>
+            <form onsubmit="return validateForm(event)">
+                <fieldset>
+                    <label for="nome">Nome*
+                    <br>
+                    <input type="text" id="nome" required></label>
+                    <br>
+                    <label for="email">Email*
+                    <br>    
+                    <input type="email" id="email" required></label>
+                    <label for="estado">Estado*
+                    <br>
+                        <select id="estado" required>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend style="padding: 5px 0;">Você se considera?</legend>
+                    <label for="leigo">
+                        <input type="radio" id="leigo" name="conhecimento" checked>Leigo
+                    </label>
+                    <br>
+                    <label for="iniciante">
+                        <input type="radio" id="iniciante" name="conhecimento">Iniciante
+                    </label>
+                    <br>
+                    <label for="intermediario">
+                        <input type="radio" id="intermediario" name="conhecimento">Intermediário
+                    </label>
+                    <br>
+                    <label for="avancado">
+                        <input type="radio" id="avancado" name="conhecimento">Avançado
+                    </label>
+                    <br>
+                    <label for="correcao">
+                        8 + 2 = ?
+                        <br>
+                        <input type="number" id="correcao">
+                    </label>
+                    <p id="mensagem"></p>
+                </fieldset>
+                <input type="submit" value="IR PARA O TESTE">
+            </form>
+        </aside>
+        <footer>
+            <p>🌟 A tecnologia e a inovação transformam o mundo a cada dia, impulsionando o futuro com novas descobertas e avanços incríveis! 🚀💡</p>
+            <img src="assets/logoKST.png" alt="Logo da Empresa" width="250px">
+        </footer>
+    </div>
+</body>
+</html>
