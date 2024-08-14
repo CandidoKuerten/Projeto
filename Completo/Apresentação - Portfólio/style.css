@@ -145,7 +145,6 @@ p{
     border-radius: 40px;
     margin: 1%;
     padding: 40px;
-    background-image: url(assets/Projeto-Android.png);
     background-size: cover;
     width: 33%;
     height: 70vh;
@@ -155,14 +154,15 @@ p{
     transition: all 6s ease;
 }
 .portfolio:hover{
-    background-position: 100% 100%;
+    background-position: 50% 100%;
 }
-.portfolio .projeto1{
+.projeto1{
     background-image: url(assets/Captacao_Lead.png);
 }
 .portfolio div{
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     bottom: 0px;
     left: 0px;
     width: 100%;
