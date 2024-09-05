@@ -179,7 +179,12 @@ p{
 .portfolio a{
     font-size: 28px;
     text-decoration: none;
-    color: var(--cor2)
+    color: var(--cor2);
+}
+.portfolio p{
+    margin-top: -20px;
+    margin-left: 5px;
+    text-align: center;
 }
 .logo{
     border-radius: 50%;

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color1: #F4AE31;
+    --color2: #000000;
+    --color3: #F4F4F4;
+    --fonte1: "Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte1);
+    font-weight: 600;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    padding: 0.5% 10%;
+}
+ul{
+    display: flex;
+}
+li{
+    margin: 0 8px;
+}
+a{
+    text-decoration: none;
+    color: var(--color2);
+    transition: all ease 0.5s;
+}
+a:hover{
+    font-size: 18px;
+}
+#sessao-apresentacao{
+    background-image: url(Assets/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 560px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
